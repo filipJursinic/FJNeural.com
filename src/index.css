@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #00C2BA, #9765E0, #CE95FB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 194, 186, 0.5);
+  }
+
+  .glow-cyan-hover:hover {
+    box-shadow: 0 0 30px rgba(0, 194, 186, 0.8);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #00C2BA, 0 0 20px #00C2BA, 0 0 30px #00C2BA;
+    }
+    to {
+      text-shadow: 0 0 20px #00C2BA, 0 0 30px #9765E0, 0 0 40px #9765E0;
+    }
+  }
+
+  .bg-neural-pattern {
+    background:
+      radial-gradient(circle at 20% 50%, rgba(54, 0, 156, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(151, 101, 224, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(0, 194, 186, 0.2) 0%, transparent 50%),
+      linear-gradient(135deg, #1a0040 0%, #36009C 50%, #1a0040 100%);
+  }
+
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 194, 186, 0.3);
+  }
+
+  .ripple {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+
+  .ripple:active::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .fade-in-section.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-in {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+}
