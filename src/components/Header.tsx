@@ -34,6 +34,15 @@ export default function Header({ scrolled }: HeaderProps) {
         scrolled ? 'bg-[#1a0040]/95 backdrop-blur-lg shadow-lg shadow-[#36009C]/20' : 'bg-transparent'
       }`}
     >
+      <div className="container mx-auto px-6 pt-4 pb-2">
+        <div className="flex justify-center">
+          <img
+            src="/FJNeuralLogotip.png"
+            alt="FJ Neural Logo"
+            className="h-16 w-auto transition-all duration-300"
+          />
+        </div>
+      </div>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="flex items-center">
