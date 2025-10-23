@@ -49,6 +49,13 @@ function App() {
       <div className="min-h-screen bg-neural-pattern text-white overflow-x-hidden">
         <NeuralBackground />
         <Header scrolled={scrolled} />
+        <div className="fixed top-20 left-0 right-0 z-40 flex justify-center pt-6 pb-4 pointer-events-none">
+          <img
+            src="/FJNeuralLogotip.png"
+            alt="FJ Neural Logo"
+            className="h-20 md:h-24 w-auto transition-all duration-300"
+          />
+        </div>
         <main>
           <Hero />
           <About />
