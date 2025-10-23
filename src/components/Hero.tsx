@@ -32,7 +32,14 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="container mx-auto text-center relative z-10">
         <div className="animate-in">
-          
+          <div className="flex justify-center mb-8">
+            <img
+              src="/FJNeuralLogotip.png"
+              alt="FJ Neural Logo"
+              className="h-24 md:h-32 lg:h-40 w-auto"
+            />
+          </div>
+
           {/* POPRAVLJEN NASLOV, ki uporablja zgornjo logiko */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
             {parsedTitle}
