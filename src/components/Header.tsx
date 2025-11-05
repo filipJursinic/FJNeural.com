@@ -15,8 +15,8 @@ export default function Header({ scrolled }: HeaderProps) {
     { href: '#about', label: t('nav_about') },
     { href: '#services', label: t('nav_services') },
     // { href: '#testimonials', label: t('nav_testimonials') },
-    { href: '#contact', label: t('nav_contact') },
-    { href: '#privacy', label: t('nav_privacy') }
+    { href: '#privacy', label: t('nav_privacy') },
+    { href: '#contact', label: t('nav_contact') }
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
