@@ -1,5 +1,4 @@
-import { ChevronDown } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext'; // Preverite, ali je pot pravilna
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -56,12 +55,11 @@ export default function Hero() {
           >
             {t('hero_cta')}
           </a>
-        </div>
-      </div>
 
-      {/* Spodnji del, ki je manjkal v prejšnjem odgovoru */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown size={48} className="text-[#00C2BA]" />
+          <p className="text-sm md:text-base text-white/70 max-w-xl mx-auto mt-6 leading-relaxed">
+            {t('hero_guarantee')}
+          </p>
+        </div>
       </div>
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

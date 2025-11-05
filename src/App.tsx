@@ -55,8 +55,8 @@ function App() {
           <WhyItMatters />
           <Services />
           {/* <Testimonials /> */}
-          <Contact />
           <Privacy />
+          <Contact />
         </main>
         <Footer />
       </div>

@@ -53,35 +53,70 @@ export default function Services() {
             {t('services_title')}
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <div
-                  key={index}
-                  className="fade-in-section opacity-0 transition-all duration-1000 translate-y-10 group relative overflow-hidden rounded-2xl"
-                  style={{ transitionDelay: `${index * 100}ms` }}
-                >
-                  <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}></div>
+          <div className="space-y-8 mb-16">
+            {/* First row - 2 items */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {services.slice(0, 2).map((service, index) => {
+                const Icon = service.icon;
+                return (
+                  <div
+                    key={index}
+                    className="fade-in-section opacity-0 transition-all duration-1000 translate-y-10 group relative overflow-hidden rounded-2xl"
+                    style={{ transitionDelay: `${index * 100}ms` }}
+                  >
+                    <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}></div>
 
-                  <div className="relative bg-[#1a0040]/80 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full card-hover">
-                    <div className="mb-6">
-                      <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${service.gradient}`}>
-                        <Icon size={40} className="text-white" strokeWidth={2} />
+                    <div className="relative bg-[#1a0040]/80 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full card-hover">
+                      <div className="mb-6">
+                        <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${service.gradient}`}>
+                          <Icon size={40} className="text-white" strokeWidth={2} />
+                        </div>
                       </div>
+
+                      <h3 className="text-2xl font-bold mb-4 text-white">
+                        {service.title}
+                      </h3>
+
+                      <p className="text-white/70 leading-relaxed">
+                        {service.description}
+                      </p>
                     </div>
-
-                    <h3 className="text-2xl font-bold mb-4 text-white">
-                      {service.title}
-                    </h3>
-
-                    <p className="text-white/70 leading-relaxed">
-                      {service.description}
-                    </p>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+
+            {/* Second row - 3 items */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.slice(2).map((service, index) => {
+                const Icon = service.icon;
+                return (
+                  <div
+                    key={index + 2}
+                    className="fade-in-section opacity-0 transition-all duration-1000 translate-y-10 group relative overflow-hidden rounded-2xl"
+                    style={{ transitionDelay: `${(index + 2) * 100}ms` }}
+                  >
+                    <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}></div>
+
+                    <div className="relative bg-[#1a0040]/80 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full card-hover">
+                      <div className="mb-6">
+                        <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${service.gradient}`}>
+                          <Icon size={40} className="text-white" strokeWidth={2} />
+                        </div>
+                      </div>
+
+                      <h3 className="text-2xl font-bold mb-4 text-white">
+                        {service.title}
+                      </h3>
+
+                      <p className="text-white/70 leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
           {/* <div className="text-center">

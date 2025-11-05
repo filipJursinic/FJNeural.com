@@ -19,6 +19,7 @@ const translations = {
     hero_title: 'Is *Repetitive* Work *Slowing* Down Your *Growth?*',
     hero_subtitle: 'Every hour your team spends on manual tasks is an hour lost on innovation. While you are stuck in processes, your competitors are winning clients. It is time to break the cycle.',
     hero_cta: 'Automate My Business',
+    hero_guarantee: '100% guarantee! If you are not happy with the results, we give you all the money back.',
     hero_phone_placeholder: 'Your phone number',
     hero_phone_submit: 'Submit',
     hero_phone_success: 'Thank you! We\'ll contact you soon.',
@@ -39,8 +40,8 @@ const translations = {
     service2_desc: 'Stop the manual posting. We automate your entire social media workflow, from scheduling content to analyzing engagement.', // (novo)
     service3_title: 'Customer Support Chatbot',
     service3_desc: 'Don\'t make your customers wait. Our AI chatbots provide instant answers and solve problems 24/7, freeing up your team.', // (novo)
-    service4_title: 'Automated Outreach Systems',
-    service4_desc: 'Turn cold outreach into warm conversations. Our systems automate lead generation and follow-ups, so you never miss an opportunity.', // (novo)
+    service4_title: 'Automated Systems',
+    service4_desc: 'From outreach and lead generation to social media management and ecommerce workflows — our intelligent systems handle the heavy lifting across your entire business.', // (novo)
     service5_title: 'Scale Your Ad Variations',
     service5_desc: 'Turn one great idea into a hundred different ads. Our AI generates a massive volume of creative variations, ready for any platform or audience.', // (novo)
     service_cta: 'See How It Works',
@@ -90,6 +91,7 @@ const translations = {
     hero_title: 'Ali *ponavljajoča* se opravila *upočasnjujejo* vašo *rast?*',
     hero_subtitle: 'Vsaka ura, ki jo vaša ekipa porabi za ročna opravila, je ura, izgubljena za inovacije. Medtem ko ste ujeti v procesih, vaša konkurenca pridobiva stranke. Čas je, da prekinete ta krog.',
     hero_cta: 'Avtomatizirajte moje poslovanje',
+    hero_guarantee: '100% garancija! Če niste zadovoljni z rezultati, vrnemo vam ves denar.',
     hero_phone_placeholder: 'Vaša telefonska številka',
     hero_phone_submit: 'Pošlji',
     hero_phone_success: 'Hvala! Kmalu vas bomo kontaktirali.',
@@ -110,8 +112,8 @@ const translations = {
     service2_desc: 'Ustavite ročno objavljanje. Avtomatiziramo vaš celoten potek dela na družbenih omrežjih, od načrtovanja vsebin do analize odziva.', // (novo)
     service3_title: 'Chatbot za podporo strankam',
     service3_desc: 'Ne pustite strank čakati. Naši AI chatboti nudijo takojšnje odgovore in rešujejo težave 24/7, s čimer razbremenijo vašo ekipo.', // (novo)
-    service4_title: 'Avtomatizirani sistemi za stike',
-    service4_desc: 'Spremenite hladne stike v tople pogovore. Naši sistemi avtomatizirajo iskanje strank in sledenje, da ne zamudite nobene priložnosti.', // (novo)
+    service4_title: 'Avtomatizirani sistemi',
+    service4_desc: 'Od iskanja strank in generiranja potencialnih kupcev do upravljanja družbenih medijev in e-trgovinskih procesov — naši inteligentni sistemi opravljajo zahtevno delo v celotnem vašem poslovanju.', // (novo)
     service5_title: 'Skaliranje oglasnih različic',
     service5_desc: 'Spremenite eno dobro idejo v sto različnih oglasov. Naša AI ustvari ogromno število kreativnih različic, pripravljenih za katerokoli platformo ali občinstvo.', // (novo)
     service_cta: 'Oglejte si, kako deluje',
