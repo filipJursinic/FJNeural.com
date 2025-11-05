@@ -62,7 +62,7 @@ const translations = {
     contact_email: 'Email',
     contact_email_placeholder: 'your@email.com',
     contact_message: 'Message',
-    contact_phone: 'Phone',
+    contact_phone: 'Phone (optional)',
     contact_phone_placeholder: '+386 XX XXX XXX',
     contact_message_placeholder: 'Tell us about your automation needs...',
     privacy_title: 'Privacy Policy',
